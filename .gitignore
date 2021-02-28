@@ -1,0 +1,27 @@
+HELP.md
+.mvn
+mvnw
+mvnw.cmd
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### STS ###
+.metadata
+.plugins
+
+**/.terraform/**
+**/terraform.tfstate*
+/**/gradlew.bat
+/**/gradlew
+/**/gradle/**
+/**/application-native.yml
+/**/application-prod.yml
+
+# Node directories
+node_modules
+/**/node_modules/**
