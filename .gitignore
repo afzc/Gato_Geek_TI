@@ -1,4 +1,6 @@
 HELP.md
+ssh_key
+ssh_key.pub
 .mvn
 mvnw
 mvnw.cmd
