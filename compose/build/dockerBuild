@@ -1,0 +1,6 @@
+FROM nginx:1.17.9-alpine
+
+LABEL version=0.0.0.1
+LABEL description="build image from httpd:2.4.43-alpine with docker-compose"
+LABEL vendor="Alan F. ZC"
+

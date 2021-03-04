@@ -1,9 +1,7 @@
 HELP.md
+HELP_.md
 ssh_key
 ssh_key.pub
-.mvn
-mvnw
-mvnw.cmd
 
 ### IntelliJ IDEA ###
 .idea
@@ -16,13 +14,10 @@ out/
 .metadata
 .plugins
 
-**/.terraform/**
-**/terraform.tfstate*
-/**/gradlew.bat
-/**/gradlew
-/**/gradle/**
-/**/application-native.yml
-/**/application-prod.yml
+/**/data
+/**/html
+/**/jenkins_home
+/**/*.mp4
 
 # Node directories
 node_modules

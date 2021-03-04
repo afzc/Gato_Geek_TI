@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web1:
+    image: httpd:2.4.43-alpine
+    container_name: httpd1
+    ports:
+      - "8080:80"
+    networks:
+      - test-net
+  web2:
+    image: httpd:2.4.43-alpine
+    container_name: httpd2
+    ports:
+      - "8081:80"
+    networks:
+      - test-net
+networks:
+  net-test:

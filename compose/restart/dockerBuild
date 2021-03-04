@@ -1,0 +1,12 @@
+FROM centos:centos8.1.1911
+
+LABEL version=0.0.0.1
+LABEL description="build image from centos:centos8.1.1911 with docker-compose, create restart"
+LABEL vendor="Alan F. ZC"
+
+COPY start.sh /start.sh
+
+RUN chmod +x /start.sh
+
+CMD /start.sh
+

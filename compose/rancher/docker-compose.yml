@@ -1,0 +1,37 @@
+version: '3'
+services:
+  node1:
+    privileged: true
+    image: docker:dind
+    container_name: node1
+    volumes:
+      - "$PWD/init_node1.sh:/init.sh"
+    command: "./init.sh"
+    networks:
+      - net
+  node2:
+    privileged: true
+    image: docker:dind
+    container_name: node2
+    volumes:
+      - "$PWD/init_node2.sh:/init.sh"
+    command: "./init.sh"
+    networks:
+      - net
+  node3:
+    privileged: true
+    image: docker:dind
+    container_name: node3
+    volumes:
+      - "$PWD/init_node3.sh:/init.sh"
+    command: "./init.sh"
+    networks:
+      - net
+  rancher:
+    image: rancher/rancher
+    container_name: rancher
+    networks:
+      - net
+    restart: unless-stopped
+networks:
+  net:

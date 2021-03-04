@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sh:
+    image: centos-test-restart:0.0.0.1
+    container_name: centos-test-restart
+    build:
+      context: .
+      dockerfile: dockerBuild
+    restart: always
+    privileged: true

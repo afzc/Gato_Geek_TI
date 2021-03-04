@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webCP:
+    image: centos:centos8.1.1911
+    container_name: centos
+    command: python -m SimpleHTTPServer 8080
+    ports:
+      - "8080:8080"

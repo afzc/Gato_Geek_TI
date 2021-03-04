@@ -1,0 +1,19 @@
+- hosts: test1
+  tasks:
+
+    - name: debug-param
+      debug:
+        var: TEXT
+
+    - name: ansible-ssh-host-task
+      shell: echo {{TEXT}} > /tmp/hola-ansible
+
+    - name: debug-tag-exec
+      debug:
+        msg: exec :)
+      tags: si-exec
+
+    - name: debug-tag-no-exec
+      debug:
+        msg: no exec :(
+      tags: no-exec

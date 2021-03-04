@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: nginx:1.17.9-alpine
+    container_name: nginx
+    ports:
+    - "8080:80"
+    volumes:
+      - "/home/ricardo/docker-compose/html:/usr/share/nginx/html"

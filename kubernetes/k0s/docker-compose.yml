@@ -1,0 +1,19 @@
+version: '3'
+services:
+  k0ss:
+    image: ubuntu:20.04
+    container_name: k0ss
+    volumes:
+      - "$PWD/init_server.sh:/init.sh"
+    command: "./init.sh"
+    networks:
+      - net
+  k0sw:
+    image: httpd:2.4.43-alpine
+    container_name: k0sw
+      - "$PWD/init_worker.sh:/init.sh"
+    command: "./init.sh"
+    networks:
+      - net
+networks:
+  net:
