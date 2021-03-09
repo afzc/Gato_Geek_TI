@@ -18,6 +18,7 @@ out/
 /**/html
 /**/jenkins_home
 /**/*.mp4
+/**/*.pdf
 /**/credentials.csv
 
 # Node directories
