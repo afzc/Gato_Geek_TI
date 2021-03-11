@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-app
+      app: hello-qpp
   template:
     metadata:
       labels:
-        app: hello-app
+        app: hello-qpp
     spec:
       containers:
       - name: hello
