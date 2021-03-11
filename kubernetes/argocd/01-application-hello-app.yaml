@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-app
+  namespace: argocd
+spec:
+  source:
+    path: kubernetes/argocd/hello-app
+    repoURL: https://github.com/afzc/Gato_Geek_TI.git
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: argocd-space
+  project: argocd-project
